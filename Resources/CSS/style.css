@@ -25,57 +25,6 @@ h4 {
 ul {
     list-style-type: none;
 }
-
-.logopic {
-    float:left;  
-}
-
-.academy {
-    color: rgb(209, 209, 209);
-    font-size: 32px;
-    font-weight: lighter;
-    float:left;
-}
-
-.colmar {
-    color: rgb(83, 83, 83);
-    font-weight: bolder;
-    float: left;
-}
-
-.header {
-    overflow: hidden;
-    background-color: white;
-  }
-  
-
-  /* Style the header links */
-  .header a {
-    float: left;
-    color: grey;
-    text-align: center;
-    padding: 10px;
-    text-decoration: none;
-    font-size: 18px;
-  }
-  
-  /* Change the background color on mouse-over */
-  .header a:hover {
-    background-color: #ddd;
-    color:grey;
-  }
-  
-  /* Style the active/current link*/
-  .header a.active {
-    background-color: dodgerblue;
-    color: white;
-  }
-  
-  /* Float the link section to the right */
-  .header-right {
-    float: right;
-  }
-
   /*positioning for the foot menu */
   .copyright {
       float: left;
@@ -88,4 +37,69 @@ ul {
   .footnav li {
       float: left;
       padding-left: 10px;
+  }
+
+  /* header css */
+  .fixednav {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* aligns links vertically */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    background-color:white;
+    border-bottom: grey solid 1px;
+    height: 64px;
+  }
+  
+  .leftnav {
+    flex-grow: 1; /* this is the important bit */
+  }
+
+  .leftnav a{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-decoration: none;
+  }
+  
+  
+/* logo style */
+
+.academy {
+    color: rgb(209, 209, 209);
+    font-size: 32px;
+    font-weight: lighter;
+}
+
+.colmar {
+    color: rgb(83, 83, 83);
+    font-weight: bolder;
+    font-size: 32px;
+}
+
+  /* Style the header links */
+  .rightnav a {
+    color: grey;
+    padding-right: 16px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  /* Change the background color on mouse-over */
+  .rightnav a:hover {
+    background-color: #ddd;
+    color:grey;
+  }
+  
+  /* Style the active/current link*/
+  .rightnav a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+
+  .rightnav {
+      padding-right: 8px;
   }
