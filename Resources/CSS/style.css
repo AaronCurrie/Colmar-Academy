@@ -83,9 +83,10 @@ ul {
   /* Style the header links */
   .rightnav a {
     color: grey;
-    padding-right: 16px;
+    margin-right: 16px;
     text-decoration: none;
     font-size: 18px;
+    padding: 1px;
   }
   
   /* Change the background color on mouse-over */
@@ -101,5 +102,5 @@ ul {
   }
 
   .rightnav {
-      padding-right: 8px;
+      margin-right: 24px;
   }
